@@ -57,7 +57,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
                     <ul className="cart-list">
                         {cartItems.map(item => (
                             <li key={item.id} className="cart-item">
-                                <img src={`/src/assets/img/${item.imagen}`} alt={item.nombre} className="cart-item-image" />
+                                <img src={`/public/assets/img/${item.imagen}`} alt={item.nombre} className="cart-item-image" />
                                 <div className="cart-item-details">
                                     <span className="cart-item-name">{item.nombre}</span>
                                     <span className="cart-item-description">Descripción: {item.descripcion}</span>

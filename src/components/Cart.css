@@ -1,5 +1,4 @@
 .cart-container {
-  display:contents;
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 10px;
@@ -11,65 +10,50 @@
 .cart-header {
   display: flex;
   background-color: #131313;
-  color:#f8f9fa;
+  color: #f8f9fa;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
 }
 
 .cart-list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-/* .cart-item {
-  display: flex;
-  color: bisque;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #3e3636 ;  
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
 .cart-item {
   display: flex;
   align-items: center;
-  color: bisque;
-  background-color: #3e3636 ;  
-  justify-content: space-between; /* Para distribuir los elementos en la fila */
-  padding: 10px; /* Ajusta el espaciado según sea necesario */
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #3e3636;
   border-radius: 5px;
-  border-bottom: 1px solid #ccc; /* Opcional: añade un borde inferior para separar elementos */
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cart-item-image {
   width: 60px;
   height: 60px;
   object-fit: cover;
+  border-radius: 50%;
   margin-right: 20px;
-  border-radius: 25px;
 }
 
-.cart-item-name, .cart-item-description, .cart-item-price, .cart-item-quantity {
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-name,
+.cart-item-description,
+.cart-item-price,
+.cart-item-quantity {
   margin-bottom: 5px;
+  color: #f8f9fa;
 }
 
-.cart-item-remove-button {
-  margin-left: auto;
-}
-
-.buy-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-left: 20px;
-  
-}
-
-/***********************/
 .cart-item-remove-button {
   background-color: #dc3545;
   border: none;
@@ -79,14 +63,20 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: auto; 
-  justify-content: space-between; 
-  align-items: center; 
 }
-
 
 .cart-item-remove-button:hover {
   background-color: #c82333;
+}
+
+.buy-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .qr-code-container {
@@ -98,9 +88,12 @@
 .centerText {
   text-align: center;
   background-color: #131313;
-  color:#f8f9fa;
-  margin-top: 20px;
+  color: #f8f9fa;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
 }
+
+
 
 
 /* .cart-container {

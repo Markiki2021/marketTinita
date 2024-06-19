@@ -28,7 +28,8 @@ const ProductList = ({ productos, handleAddToCart }) => {
             {productos.map(producto => (
                 <div key={producto.id} className="product-item">
                     <div className="product-item-image">
-                        <img src={`/src/assets/img/${producto.imagen}`} alt={producto.nombre} className="product-image" />
+                        <img src={`/public/assets/img/${producto.imagen}`} alt={producto.nombre} className="product-image" />
+                        {/* <img src={`/src/assets/img/${producto.imagen}`} alt={producto.nombre} className="product-image" /> */}
                     </div>
                     <div className="product-item-text">
                         <h3 className="product-name">{producto.nombre}</h3>
