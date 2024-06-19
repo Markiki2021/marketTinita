@@ -1,0 +1,79 @@
+.menubar-custom {
+  position: fixed; /* Hace que el Navbar sea fijo */
+  top: 0; /* Lo coloca en la parte superior */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Asegura que esté por encima de otros contenidos */
+  background-color: #1f2937; /* Fondo oscuro */
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Ajuste para distribuir elementos */
+  align-items: center; /* Alineación vertical */
+}
+
+.navbar-title {
+  color: rgb(18, 235, 235);
+  align-items: center;
+}
+
+.menubar-custom .p-menubar-root-list > .p-menubaritem > .p-menuitem-link:hover {
+  background-color: #374151;
+  border-radius: 5px;
+}
+
+.menubar-custom .search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menubar-custom .search-input {
+  width: 250px; /* Ancho del campo de búsqueda */
+  padding: 10px 15px; /* Añade algo de padding para que sea más espacioso */
+  border-radius: 20px; /* Esquinas redondeadas */
+  background-color: #555; /* Fondo del campo de búsqueda */
+  color: #fff; /* Color del texto del campo de búsqueda */
+  font-size: 1rem; /* Tamaño de fuente */
+  border: none; /* Quita el borde por defecto */
+  outline: none; /* Quita el outline al enfocar */
+}
+
+.menubar-custom .search-input::placeholder {
+  color: #ddd; /* Color del placeholder */
+}
+
+.menubar-custom .search-icon {
+  margin-left: -30px; /* Ajusta el margen del ícono */
+  color: #9ca3af; /* Color del ícono */
+  font-size: 1.2rem; /* Tamaño del ícono */
+}
+
+.menubar-custom .navbar-end {
+  display: flex;
+  align-items: center;
+}
+
+.menubar-custom .cart-icon {
+  margin-left: 20px; /* Ajuste de margen izquierdo del icono del carrito */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menubar-custom .cart-icon i {
+  color: #9ca3af; /* Color del icono del carrito */
+  font-size: 1.5rem; /* Tamaño del icono del carrito */
+  
+}
+
+.menubar-custom .cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #f00; /* Color de fondo del contador */
+  color: #fff; /* Color del texto del contador */
+  border-radius: 50%; /* Forma del contador */
+  padding: 4px 8px; /* Espacio interno del contador */
+  font-size: 0.8rem; /* Tamaño de fuente del contador */
+}

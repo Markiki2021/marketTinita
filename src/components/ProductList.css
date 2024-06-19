@@ -1,0 +1,84 @@
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo claro para el contenedor */
+  margin-top: 20px; /* Añadir margen superior para separar del navbar */
+}
+
+.product-item {
+  background-color: #333; /* Fondo oscuro para las tarjetas  #2c3e50*/
+  color: #ecf0f1; /* Color claro para el texto */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+  flex: 1 1 calc(20% - 40px); /* Cinco tarjetas por fila */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Reducido padding */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+.product-item-image, .product-item-text, .product-item-button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-item-image {
+  height: 150px; /* Altura fija para el contenedor de la imagen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Asegura que las imágenes no se desborden */
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes mantengan una relación de aspecto uniforme */
+  border-radius: 4px;
+}
+
+.product-item-text {
+  margin: 10px 0; /* Espacio entre los textos y los demás elementos */
+}
+
+.product-name {
+  font-size: 1.2rem; /* Reducido tamaño de fuente */
+  margin-bottom: 5px; /* Reducido margen inferior */
+  color: #e74c3c; /* Color vistoso para el nombre del producto */
+}
+
+.product-description {
+  font-size: 0.9rem; /* Reducido tamaño de fuente */
+  margin-bottom: 5px; /* Reducido margen inferior */
+  color: #bdc3c7; /* Color claro para la descripción */
+}
+
+.product-price {
+  font-size: 1rem; /* Reducido tamaño de fuente */
+  margin-bottom: 10px; /* Reducido margen inferior */
+  color: #27ae60; /* Color vistoso para el precio */
+}
+
+.product-item-button .add-to-cart-button {
+  background-color: #28a745; /* Color verde */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-item-button .add-to-cart-button:hover {
+  background-color: #218838; /* Color verde oscuro */
+}
