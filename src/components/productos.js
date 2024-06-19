@@ -1,9 +1,9 @@
 const productos = [
     { id: 1, nombre: 'Manzana Golden', descripcion: 'Manzana Golden Delicious x kg', precio: 49.90, unidad: 'kg', imagen: 'mza_gold.png', departamento: 'Frutas y Verduras' },
-    { id: 2, nombre: 'Carne molida', descripcion: 'Carne molida de Sirlon Premium', precio: 266.9, unidad: 'kg', imagen: 'CARNE_MOL.png', departamento: 'Carnes' },
-    { id: 3, nombre: 'TANG Tamarindo', descripcion: 'Bebida en polvo Tamarindo TANG 13 grs', precio: 5.5, unidad: 'pz', imagen: 'TANG_TAM.png', departamento: 'Despensa' },
-    { id: 4, nombre: 'Margarina CHILCHOTA', descripcion: 'Margarina c/sal CHILCHOTA 400 grs', precio: 31.90, unidad: 'pz', imagen: 'MARGA_CHIL.png', departamento: '' },
-    { id: 5, nombre: 'Arroz CAZEROLA', descripcion: 'Arroz CAZEROLA 907 grs', precio: 22.9, unidad: 'pz', imagen: 'ARROZ_CAZE.png', departamento: 'Despensa' },
+    { id: 2, nombre: 'Carne molida', descripcion: 'Carne molida de Sirlon Premium', precio: 266.9, unidad: 'kg', imagen: 'carne_mol.png', departamento: 'Carnes' },
+    { id: 3, nombre: 'TANG Tamarindo', descripcion: 'Bebida en polvo Tamarindo TANG 13 grs', precio: 5.5, unidad: 'pz', imagen: 'tang_tam.png', departamento: 'Despensa' },
+    { id: 4, nombre: 'Margarina CHILCHOTA', descripcion: 'Margarina c/sal CHILCHOTA 400 grs', precio: 31.90, unidad: 'pz', imagen: 'marga_chil.png', departamento: '' },
+    { id: 5, nombre: 'Arroz CAZEROLA', descripcion: 'Arroz CAZEROLA 907 grs', precio: 22.9, unidad: 'pz', imagen: 'arroz_caze.png', departamento: 'Despensa' },
     { id: 6, nombre: 'Mango ATAULFO', descripcion: 'Mango ATAULFO x kg', precio: 49.9, unidad: 'pz', imagen: 'mang_atau.png', departamento: 'Frutas y Verduras' },
     { id: 7, nombre: 'Brocoli', descripcion: 'Brocoli x kg', precio: 69.9, unidad: 'pz', imagen: 'brocoli.png', departamento: 'Frutas y Verduras' },
     { id: 8, nombre: 'Limon agrio ', descripcion: 'Limon agrio AlSuper', precio: 28.9, unidad: 'kg', imagen: 'limo_agrio.png', departamento: 'Frutas y Verduras' },
