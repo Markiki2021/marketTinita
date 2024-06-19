@@ -77,3 +77,52 @@
   padding: 4px 8px; /* Espacio interno del contador */
   font-size: 0.8rem; /* Tamaño de fuente del contador */
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-logo {
+    font-size: 1.2em;
+  }
+
+  .navbar-center {
+    margin: 10px 0;
+  }
+
+  .navbar-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-search input {
+    width: 100%;
+    max-width: none;
+  }
+
+  .navbar-cart {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1em;
+  }
+
+  .navbar-center span {
+    font-size: 1em;
+  }
+
+  .navbar-search input {
+    font-size: 0.9em;
+  }
+
+  .navbar-cart i {
+    font-size: 1.2em;
+  }
+}

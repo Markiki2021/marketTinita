@@ -21,7 +21,7 @@ const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
 
     const start = (
         <>
-            <img alt="logo" src="src/assets/img/logo_market.png" height="40" />
+            <img alt="logo" src="/public/assets/img/logo_market.png" height="40" />
             <span className="navbar-title">Market Tinita</span>
         </>
     );
