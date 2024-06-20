@@ -54,7 +54,7 @@ const productos = [
 {id: 53, nombre: 'TANG Limonada', descripcion: 'Bebida en polvo Limonada TANG 13grs', precio: 5.5, unidad: '1pz', imagen: 'tang_lim.png', departamento: 'Despensa' },
 {id: 54, nombre: 'TANG Naranja', descripcion: 'Bebida en polvo Naranja TANG 13grs', precio: 5.5, unidad: '1pz', imagen: 'tang_nar.png', departamento: 'Despensa' },
 {id: 55, nombre: 'TANG Tamarindo', descripcion: 'ebida en polvo Tamarindo TANG 13 grs', precio: 5.5, unidad: 'pz', imagen: 'tang_tam.png', departamento: 'Despensa' },
-{id: 56, nombre: 'TANG Tamarindo', descripcion: 'Bebida en polvo Manzana TANG 13grs', precio: 5.5, unidad: '1pz', imagen: 'tang_mza.png', departamento: 'Despensa' },
+{id: 56, nombre: 'TANG Manzana', descripcion: 'Bebida en polvo Manzana TANG 13grs', precio: 5.5, unidad: '1pz', imagen: 'tang_mza.png', departamento: 'Despensa' },
 {id: 57, nombre: 'Chorizo Las Sevillanas', descripcion: 'Chorizo Las Sevillanas', precio: 12.9, unidad: 'pz', imagen: 'chor_sev.png', departamento: 'Embutidos' },
 {id: 58, nombre: 'Bolsa p/basura COSTALITOS', descripcion: 'Bolsa p/basura G 62x80 COSTALITOS', precio: 34.9, unidad: 'pz', imagen: 'costal.png', departamento: 'Limpieza' },
 {id: 59, nombre: 'Detergente en polvo ACE ', descripcion: 'Detergente en polvo ACE 540 grs', precio: 25.9, unidad: '1pz', imagen: 'deter_ace.png', departamento: 'Limpieza' },
