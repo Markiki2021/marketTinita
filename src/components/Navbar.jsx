@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
 import 'primereact/resources/themes/saga-blue/theme.css';
@@ -8,11 +8,7 @@ import 'primeicons/primeicons.css';
 import './Navbar.css';
 
 const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
-    const [menuVisible, setMenuVisible] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuVisible(!menuVisible);
-    };
+    const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
 
     const items = [
         { label: 'Despensa', command: () => onFilterDepartment('Despensa') },
@@ -27,7 +23,7 @@ const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
 
     const start = (
         <>
-            <img alt="logo" src="/public/assets/img/logo_market.png" height="40" />
+            <img alt="logo" src="../assets/img/logo_market.png" height="40" />
             <span className="navbar-title">Market Tinita</span>
         </>
     );
@@ -45,22 +41,26 @@ const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
         </div>
     );
 
+    const toggleMobileMenu = () => {
+        setIsMobileMenuVisible(!isMobileMenuVisible);
+    };
+
     return (
-        <>
+        <div className="menubar-container">
             <Menubar model={items} start={start} end={end} className="menubar-custom" />
-            <button className="menu-toggle" onClick={toggleMenu}>
+            <button className="menu-toggle" onClick={toggleMobileMenu}>
                 <i className="pi pi-bars"></i>
             </button>
-            {menuVisible && (
+            {isMobileMenuVisible && (
                 <div className="mobile-menu">
-                    {items.map(item => (
-                        <button key={item.label} className="mobile-menu-item" onClick={item.command}>
+                    {items.map((item, index) => (
+                        <button key={index} className="mobile-menu-item" onClick={item.command}>
                             {item.label}
                         </button>
                     ))}
                 </div>
             )}
-        </>
+        </div>
     );
 };
 

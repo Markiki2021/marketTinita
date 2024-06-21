@@ -1,6 +1,10 @@
 /* Navbar.css */
 
 /* Estilos básicos para dispositivos móviles */
+.menubar-container {
+  position: relative;
+}
+
 .menubar-custom {
   position: fixed;
   top: 0;
@@ -137,45 +141,6 @@
 
 /* Estilos para pantallas más grandes */
 @media (min-width: 600px) {
-  .menubar-custom {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar-title {
-    margin-bottom: 0;
-  }
-
-  .menubar-custom .p-menubar-root-list {
-    display: flex; /* Mostrar elementos del menú en pantallas más grandes */
-    flex-direction: row;
-    gap: 15px; /* Espacio entre elementos del menú */
-  }
-
-  .p-menubar-root-list > li > a {
-    color: #fff;
-    font-size: 1rem;
-  }
-
-  .menubar-custom .search-container {
-    width: auto;
-  }
-
-  .menubar-custom .navbar-end {
-    margin-top: 0;
-  }
-
-  .menu-toggle {
-    display: none; /* Ocultar el botón de menú en pantallas más grandes */
-  }
-
-  .mobile-menu {
-    display: none; /* Ocultar el menú desplegable en pantallas más grandes */
-  }
-}
-
-@media (min-width: 375) {
   .menubar-custom {
     flex-direction: row;
     justify-content: space-between;
