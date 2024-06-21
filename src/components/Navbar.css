@@ -19,6 +19,7 @@
 .navbar-title {
   color: rgb(18, 235, 235);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .menubar-custom .p-menubar-root-list {
@@ -26,10 +27,12 @@
   flex-direction: column;
   width: 100%;
   text-align: center;
+  padding: 0;
 }
 
 .menubar-custom .p-menubar-root-list > .p-menubaritem {
   margin: 5px 0;
+  list-style: none;
 }
 
 .menubar-custom .search-container {
@@ -38,6 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .menubar-custom .search-input {

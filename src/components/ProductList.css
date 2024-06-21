@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* Reducimos el espacio para que quepan más tarjetas en una fila */
+  gap: 10px;
   padding: 10px;
   background-color: #f0f0f0;
   margin-top: 20px;
@@ -17,7 +17,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  flex: 1 1 calc(100% - 20px); /* Una tarjeta por fila en móviles */
+  flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en móviles */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .product-item-image {
-  height: 150px;
+  height: 100px; /* Reducir la altura de la imagen */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,8 +41,8 @@
 }
 
 .product-image {
-  width: 100%;
-  height: 100%;
+  width: 80%; /* Reducir el tamaño de la imagen */
+  height: 80%;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -52,19 +52,19 @@
 }
 
 .product-name {
-  font-size: 1rem; /* Ajustamos el tamaño de fuente para móviles */
+  font-size: 0.8rem; /* Ajustamos el tamaño de fuente para móviles */
   margin-bottom: 5px;
   color: #e74c3c;
 }
 
 .product-description {
-  font-size: 0.8rem; /* Ajustamos el tamaño de fuente para móviles */
+  font-size: 0.7rem; /* Ajustamos el tamaño de fuente para móviles */
   margin-bottom: 5px;
   color: #bdc3c7;
 }
 
 .product-price {
-  font-size: 0.9rem; /* Ajustamos el tamaño de fuente para móviles */
+  font-size: 0.8rem; /* Ajustamos el tamaño de fuente para móviles */
   margin-bottom: 10px;
   color: #27ae60;
 }
@@ -87,12 +87,12 @@
 /* Estilos para pantallas más grandes */
 @media (min-width: 600px) {
   .product-item {
-    flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en tablets */
+    flex: 1 1 calc(33.33% - 20px); /* Tres tarjetas por fila en tablets */
   }
 }
 
 @media (min-width: 900px) {
   .product-item {
-    flex: 1 1 calc(33.33% - 20px); /* Tres tarjetas por fila en pantallas grandes */
+    flex: 1 1 calc(25% - 20px); /* Cuatro tarjetas por fila en pantallas grandes */
   }
 }
