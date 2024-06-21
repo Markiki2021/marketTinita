@@ -1,5 +1,3 @@
-import 'primeicons/primeicons.css';
-
 /* FRUTAS Y VERDURAS
    DESPENSA
    LACTEOS Y HUEVO
@@ -18,6 +16,7 @@ import 'primeicons/primeicons.css';
    BEBES
 */
 
+import 'primeicons/primeicons.css';
 import PropTypes from 'prop-types';
 import { Button } from 'primereact/button';
 import './ProductList.css';

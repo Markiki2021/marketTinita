@@ -1,146 +1,119 @@
+/* Navbar.css */
+
+/* Estilos básicos para dispositivos móviles */
 .menubar-custom {
-  position: fixed; /* Hace que el Navbar sea fijo */
-  top: 0; /* Lo coloca en la parte superior */
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Asegura que esté por encima de otros contenidos */
-  background-color: #1f2937; /* Fondo oscuro */
+  z-index: 1000;
+  background-color: #1f2937;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 10px;
   display: flex;
-  justify-content: space-between; /* Ajuste para distribuir elementos */
-  align-items: center; /* Alineación vertical */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-title {
   color: rgb(18, 235, 235);
-  align-items: center;
+  margin-bottom: 10px;
 }
 
-.menubar-custom .p-menubar-root-list > .p-menubaritem > .p-menuitem-link:hover {
-  background-color: #374151;
-  border-radius: 5px;
+.menubar-custom .p-menubar-root-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.menubar-custom .p-menubar-root-list > .p-menubaritem {
+  margin: 5px 0;
 }
 
 .menubar-custom .search-container {
   position: relative;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .menubar-custom .search-input {
-  width: 250px; /* Ancho del campo de búsqueda */
-  padding: 10px 15px; /* Añade algo de padding para que sea más espacioso */
-  border-radius: 20px; /* Esquinas redondeadas */
-  background-color: #555; /* Fondo del campo de búsqueda */
-  color: #fff; /* Color del texto del campo de búsqueda */
-  font-size: 1rem; /* Tamaño de fuente */
-  border: none; /* Quita el borde por defecto */
-  outline: none; /* Quita el outline al enfocar */
+  width: calc(100% - 40px);
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #555;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  outline: none;
 }
 
 .menubar-custom .search-input::placeholder {
-  color: #ddd; /* Color del placeholder */
+  color: #ddd;
 }
 
 .menubar-custom .search-icon {
-  margin-left: -30px; /* Ajusta el margen del ícono */
-  color: #9ca3af; /* Color del ícono */
-  font-size: 1.2rem; /* Tamaño del ícono */
+  position: absolute;
+  right: 15px;
+  color: #9ca3af;
+  font-size: 1.2rem;
 }
 
 .menubar-custom .navbar-end {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .menubar-custom .cart-icon {
-  margin-left: 20px; /* Ajuste de margen izquierdo del icono del carrito */
+  margin-left: 20px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
 .menubar-custom .cart-icon i {
-  color: #9ca3af; /* Color del icono del carrito */
-  font-size: 1.5rem; /* Tamaño del icono del carrito */
-  
+  color: #9ca3af;
+  font-size: 1.5rem;
 }
 
 .menubar-custom .cart-count {
   position: absolute;
   top: -8px;
   right: -8px;
-  background-color: #f00; /* Color de fondo del contador */
-  color: #fff; /* Color del texto del contador */
-  border-radius: 50%; /* Forma del contador */
-  padding: 4px 8px; /* Espacio interno del contador */
-  font-size: 0.8rem; /* Tamaño de fuente del contador */
+  background-color: #f00;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
+/* Estilos para pantallas más grandes */
+@media (min-width: 600px) {
+  .menubar-custom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .navbar-logo {
-    font-size: 1.2em;
+  .navbar-title {
+    margin-bottom: 0;
   }
 
-  .navbar-center {
-    margin: 10px 0;
+  .menubar-custom .p-menubar-root-list {
+    flex-direction: row;
+    width: auto;
   }
 
-  .navbar-search {
-    width: 100%;
-    margin-bottom: 10px;
+  .menubar-custom .search-container {
+    width: auto;
   }
 
-  .navbar-search input {
-    width: 100%;
-    max-width: none;
-  }
-
-  .navbar-cart {
-    width: 100%;
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-logo {
-    font-size: 1em;
-  }
-
-  .navbar-center span {
-    font-size: 1em;
-  }
-
-  .navbar-search input {
-    font-size: 0.9em;
-  }
-
-  .navbar-cart i {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 360px) {
-  .navbar-logo {
-    font-size: 0.8em;
-  }
-
-  .navbar-center span {
-    font-size: 0.8em;
-  }
-
-  .navbar-search input {
-    font-size: 0.7em;
-  }
-
-  .navbar-cart i {
-    font-size: 1.0em;
+  .menubar-custom .navbar-end {
+    margin-top: 0;
   }
 }

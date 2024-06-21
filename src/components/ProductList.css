@@ -1,27 +1,28 @@
+/* ProductList.css */
+
+/* Estilos básicos para dispositivos móviles */
 .product-list-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f0f0f0; /* Fondo claro para el contenedor */
-  margin-top: 20px; /* Añadir margen superior para separar del navbar */
+  gap: 10px; /* Reducimos el espacio para que quepan más tarjetas en una fila */
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
 }
 
 .product-item {
-  background-color: #333; /* Fondo oscuro para las tarjetas  #2c3e50*/
-  color: #ecf0f1; /* Color claro para el texto */
+  background-color: #333;
+  color: #ecf0f1;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  max-width: 300px;
-  text-align: center;
-  flex: 1 1 calc(20% - 40px); /* Cinco tarjetas por fila */
+  flex: 1 1 calc(100% - 20px); /* Una tarjeta por fila en móviles */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px; /* Reducido padding */
-  height: auto; /* Ajusta la altura automáticamente */
+  padding: 10px;
+  height: auto;
 }
 
 .product-item-image, .product-item-text, .product-item-button {
@@ -32,91 +33,66 @@
 }
 
 .product-item-image {
-  height: 150px; /* Altura fija para el contenedor de la imagen */
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Asegura que las imágenes no se desborden */
+  overflow: hidden;
 }
 
 .product-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que las imágenes mantengan una relación de aspecto uniforme */
+  object-fit: cover;
   border-radius: 4px;
 }
 
 .product-item-text {
-  margin: 10px 0; /* Espacio entre los textos y los demás elementos */
+  margin: 10px 0;
 }
 
 .product-name {
-  font-size: 1.2rem; /* Reducido tamaño de fuente */
-  margin-bottom: 5px; /* Reducido margen inferior */
-  color: #e74c3c; /* Color vistoso para el nombre del producto */
+  font-size: 1rem; /* Ajustamos el tamaño de fuente para móviles */
+  margin-bottom: 5px;
+  color: #e74c3c;
 }
 
 .product-description {
-  font-size: 0.9rem; /* Reducido tamaño de fuente */
-  margin-bottom: 5px; /* Reducido margen inferior */
-  color: #bdc3c7; /* Color claro para la descripción */
+  font-size: 0.8rem; /* Ajustamos el tamaño de fuente para móviles */
+  margin-bottom: 5px;
+  color: #bdc3c7;
 }
 
 .product-price {
-  font-size: 1rem; /* Reducido tamaño de fuente */
-  margin-bottom: 10px; /* Reducido margen inferior */
-  color: #27ae60; /* Color vistoso para el precio */
+  font-size: 0.9rem; /* Ajustamos el tamaño de fuente para móviles */
+  margin-bottom: 10px;
+  color: #27ae60;
 }
 
 .product-item-button .add-to-cart-button {
-  background-color: #28a745; /* Color verde */
+  background-color: #28a745;
   border: none;
   color: white;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 8px 16px;
+  font-size: 0.9em;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .product-item-button .add-to-cart-button:hover {
-  background-color: #218838; /* Color verde oscuro */
+  background-color: #218838;
 }
 
-/* Media queries para hacer responsive */
-
-@media (max-width: 1200px) {
+/* Estilos para pantallas más grandes */
+@media (min-width: 600px) {
   .product-item {
-    flex: 1 1 calc(25% - 40px);
+    flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en tablets */
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 900px) {
   .product-item {
-    flex: 1 1 calc(33.33% - 40px);
-  }
-}
-
-@media (max-width: 768px) {
-  .product-item {
-    flex: 1 1 calc(50% - 40px);
-  }
-}
-
-@media (max-width: 576px) {
-  .product-item {
-    flex: 1 1 calc(100% - 40px);
-  }
-}
-
-@media (max-width: 375px) {
-  .product-item {
-    flex: 1 1 calc(100% - 40px);
-  }
-}
-
-@media (max-width: 360px) {
-  .product-item {
-    flex: 1 1 calc(100% - 40px);
+    flex: 1 1 calc(33.33% - 20px); /* Tres tarjetas por fila en pantallas grandes */
   }
 }
