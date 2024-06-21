@@ -19,7 +19,6 @@ const productos = [
     {id: 18, nombre: 'Lechuga bola', descripcion: 'Lechuga Bola x pieza', precio: 29.9, unidad: '1pz', imagen: 'lechuga_bola.png', departamento: 'Frutas y Verduras' },
     {id: 19, nombre: 'Limon agrio', descripcion: 'Limon agrio x kg', precio: 28.9, unidad: 'kg', imagen: 'limo_agrio.png', departamento: 'Frutas y Verduras' },
     {id: 20, nombre: 'Mango ATAULFO', descripcion: 'Mango ATAULFO x kg', precio: 49.9, unidad: 'kg', imagen: 'mang_atau.png', departamento: 'Frutas y Verduras' },
-    {id: 21, nombre: 'Manzana Golden', descripcion: 'Manzana Golden Delicious x kg', precio: 49.9, unidad: 'kg', imagen: 'mza_gold.png', departamento: 'Frutas y Verduras' },
     {id: 22, nombre: 'Manzana Golden Delicious', descripcion: 'Manzana Golden Delicious x kg', precio: 49.9, unidad: '1pz', imagen: 'mza_gold.png', departamento: 'Frutas y Verduras' },
     {id: 23, nombre: 'Naranja Valencia', descripcion: 'Naranja Valencia x kg', precio: 34.9, unidad: '1pz', imagen: 'naranja_val.png', departamento: 'Frutas y Verduras' },
     {id: 24, nombre: 'Nopal en penca limpio ', descripcion: 'Nopal en penca limpio x kg', precio: 39.9, unidad: '1pz', imagen: 'nopal_lim.png', departamento: 'Frutas y Verduras' },
