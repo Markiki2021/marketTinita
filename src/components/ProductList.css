@@ -52,9 +52,9 @@
 }
 
 .product-name {
-  font-size: 0.8rem; /* Ajustamos el tamaño de fuente para móviles */
+  font-size: 1rem; /* Ajustamos el tamaño de fuente para móviles  0.8rem*/
   margin-bottom: 5px;
-  color: #e74c3c;
+  color: #3bd61c; /* color: #e74c3c; */
 }
 
 .product-description {
