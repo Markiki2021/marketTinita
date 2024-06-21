@@ -1,12 +1,19 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import './Navbar.css'; // 
+import './Navbar.css';
 
 const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
+    const [menuVisible, setMenuVisible] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible);
+    };
+
     const items = [
         { label: 'Despensa', command: () => onFilterDepartment('Despensa') },
         { label: 'Farmacia', command: () => onFilterDepartment('Farmacia') },
@@ -16,7 +23,6 @@ const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
         { label: 'Carnes', command: () => onFilterDepartment('Carnes') },
         { label: 'Pescados', command: () => onFilterDepartment('Pescados') },
         { label: 'BORRAR', command: () => onFilterDepartment('') }
-        
     ];
 
     const start = (
@@ -40,7 +46,21 @@ const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
     );
 
     return (
-        <Menubar model={items} start={start} end={end} className="menubar-custom" />
+        <>
+            <Menubar model={items} start={start} end={end} className="menubar-custom" />
+            <button className="menu-toggle" onClick={toggleMenu}>
+                <i className="pi pi-bars"></i>
+            </button>
+            {menuVisible && (
+                <div className="mobile-menu">
+                    {items.map(item => (
+                        <button key={item.label} className="mobile-menu-item" onClick={item.command}>
+                            {item.label}
+                        </button>
+                    ))}
+                </div>
+            )}
+        </>
     );
 };
 
@@ -51,6 +71,3 @@ Navbar.propTypes = {
 };
 
 export default Navbar;
-
-
-
