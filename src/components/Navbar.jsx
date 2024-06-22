@@ -8,7 +8,7 @@ import 'primeicons/primeicons.css';
 import './Navbar.css';
 
 const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
-    const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
 
     const items = [
         { label: 'Despensa', command: () => onFilterDepartment('Despensa') },
@@ -38,29 +38,23 @@ const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
                 <i className="pi pi-shopping-cart" style={{ fontSize: '1.75rem' }}></i>
                 <span className="cart-count">{cartItemCount}</span>
             </div>
+            <i className="pi pi-bars menu-icon" onClick={() => setIsMenuVisible(!isMenuVisible)}></i>
         </div>
     );
 
-    const toggleMobileMenu = () => {
-        setIsMobileMenuVisible(!isMobileMenuVisible);
-    };
-
     return (
-        <div className="menubar-container">
+        <>
             <Menubar model={items} start={start} end={end} className="menubar-custom" />
-            <button className="menu-toggle" onClick={toggleMobileMenu}>
-                <i className="pi pi-bars"></i>
-            </button>
-            {isMobileMenuVisible && (
-                <div className="mobile-menu">
+            {isMenuVisible && (
+                <div className="menu-items-mobile">
                     {items.map((item, index) => (
-                        <button key={index} className="mobile-menu-item" onClick={item.command}>
+                        <div key={index} className="menu-item-mobile" onClick={item.command}>
                             {item.label}
-                        </button>
+                        </div>
                     ))}
                 </div>
             )}
-        </div>
+        </>
     );
 };
 
