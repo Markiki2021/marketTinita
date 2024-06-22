@@ -11,13 +11,21 @@ const Navbar = ({ onSearch, onFilterDepartment, cartItemCount }) => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
     const items = [
-        { label: 'Despensa', command: () => onFilterDepartment('Despensa') },
-        { label: 'Farmacia', command: () => onFilterDepartment('Farmacia') },
-        { label: 'Lavandería', command: () => onFilterDepartment('Lavandería') },
-        { label: 'Frutas y Verduras', command: () => onFilterDepartment('Frutas y Verduras') },
-        { label: 'Lácteos y Huevo', command: () => onFilterDepartment('Lácteos y Huevo') },
         { label: 'Carnes', command: () => onFilterDepartment('Carnes') },
+        { label: 'Desechables', command: () => onFilterDepartment('Desechables') },
+        { label: 'Despensa', command: () => onFilterDepartment('Despensa') },
+        { label: 'Embutidos', command: () => onFilterDepartment('Embutidos') },
+        { label: 'Frutas y Verdaduras', command: () => onFilterDepartment('Frutas y Verdaduras') },
+        { label: 'Huevos', command: () => onFilterDepartment('Huevos') },
+        { label: 'Lacteos', command: () => onFilterDepartment('Lacteos') },
+        { label: 'Limpieza', command: () => onFilterDepartment('Limpieza') },
+        { label: 'Panaderia', command: () => onFilterDepartment('Pan') },
         { label: 'Pescados', command: () => onFilterDepartment('Pescados') },
+        { label: 'Quesos', command: () => onFilterDepartment('Quesos') },
+        { label: 'Salud', command: () => onFilterDepartment('Salud') },
+        { label: 'Snacks', command: () => onFilterDepartment('Snacks') },
+        { label: 'Suavizantes', command: () => onFilterDepartment('Suavizantes') },
+        { label: 'Yoghourts', command: () => onFilterDepartment('Yoghourt') },
         { label: 'BORRAR', command: () => onFilterDepartment('') }
     ];
 
